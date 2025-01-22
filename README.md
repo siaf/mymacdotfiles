@@ -10,4 +10,6 @@
 ```bash
 brew install --cask nikitabobko/tap/aerospace #on Ventura and above
 brew install --cask amethyst #works on BigSur
+
+brew install --cask kitty
 ```
