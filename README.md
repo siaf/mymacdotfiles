@@ -21,17 +21,16 @@ brew install --cask raycast #newer option
 brew install --cask kitty
 brew install --cask font-fira-code-nerd-font
 brew install starship
+brew install neofetch
 
 brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
-
-
 brew install fzf #if not already as part of yazi
 
 brew install neovim
 brew install --cask sublime-text
-
 brew install --cask zed
 #note: trae isn't currently on brew, so need to install from: https://www.trae.ai/
+
 brew install git
 brew install lazygit
 
@@ -39,11 +38,10 @@ brew install btop
 brew install dust
 brew install tldr
 brew install stow
+brew install --cask keycastr
 
 brew install --cask google-chrome
-
-brew install neofetch
-
+brew install --cask zen-browser
 
 ```
 #Setup Git
@@ -56,7 +54,7 @@ open ~/.ssh/config
 #if not create it
 touch ~/.ssh/config
 ```
-#then add to that file:
+then add to that file:
 ```
 Host github.com
   AddKeysToAgent yes
