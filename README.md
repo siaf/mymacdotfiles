@@ -19,10 +19,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install --cask raycast #newer option
 
 brew install --cask kitty
+brew install --cask font-fira-code-nerd-font
+brew install starship
 
 brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
 
-brew install starship
 
 brew install fzf #if not already as part of yazi
 
@@ -42,6 +43,8 @@ brew install stow
 brew install --cask google-chrome
 
 brew install neofetch
+
+
 ```
 #Setup Git
 ```bash
@@ -64,4 +67,15 @@ Host github.com
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub
 #then paste the value that's now in clipboard in github as a new key.
+```
+
+#Setup Stow and Clone Configs
+
+```bash
+cd ~
+git clone git@github.com:siaf/mymacdotfiles.git
+brew install stow
+
+cd mymacdotfiles
+stow . --adopt
 ```
