@@ -43,3 +43,25 @@ brew install --cask google-chrome
 
 brew install neofetch
 ```
+#Setup Git
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+
+# check if this exists:
+open ~/.ssh/config
+#if not create it
+touch ~/.ssh/config
+```
+#then add to that file:
+```
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+```bash
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+pbcopy < ~/.ssh/id_ed25519.pub
+#then paste the value that's now in clipboard in github as a new key.
+```
